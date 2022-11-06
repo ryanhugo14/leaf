@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mega-item {
+  @apply md:invisible md:opacity-0;
+}
+
+.mega:hover .mega-item {
+  @apply md:visible md:translate-y-1 md:opacity-100;
+}
