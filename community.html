@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Blog</title>
+    <title>Community</title>
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -20,25 +20,22 @@
 
 </head>
 
-<body class="bg-[#141d2b]" id="blog">
+<body class="bg-[#141d2b]" id="community">
     <!-- first Nav S -->
     <div class="bg-[#121927] py-5 w-full lg:px-24">
         <div class="flex justify-between items-center container mx-auto px-5 firstNavMenu">
             <div class="">
                 <ul class="flex items-center space-x-5 md:space-x-10 lg:space-x-20 ">
-                    <a href="./blogPage.html">
-                        Blog
-                    </a>
                     <a href="./index.html">
                         <li class="text-[#34D399] hover:scale-125 hover:cursor-pointer ease-in-out transition duration-500">Home</li>
                     </a>
-                    <a href="#blog">
+                    <a href="./blog.html">
                         <li class="text-[#A4B1CD] hover:scale-125 hover:cursor-pointer ease-in-out transition duration-500">Blog</li>
                     </a>
-                    <a href="./communityPage.html">
+                    <a href="#community">
                         <li class="text-[#A4B1CD] hover:scale-125 hover:cursor-pointer ease-in-out transition duration-500">Community</li>
                     </a>
-                    <a href="./certificatePage.html">
+                    <a href="./certificate.html">
                         <li class="text-[#A4B1CD] hover:scale-125 hover:cursor-pointer ease-in-out transition duration-500">Certificate</li>
                     </a>
                 </ul>
@@ -164,120 +161,70 @@
         </div>
     </div>
     <!-- second Nav E -->
-
     <!-- hero section S -->
-    <section class="container mx-auto px-5 lg:px-20  my-16 heroCard">
-        <!-- Carousel -->
-        <!-- Implement the carousel -->
-        <div class="relative rounded-xl w-full mx-auto bg-[#121927]">
-            <div>
-                <!-- slide 1 -->
-                <div class="slide relative">
-                    <div class="w-full">
-                        <img src="/assets/img/Slide Image Example.svg" alt="">
-                    </div>
-                </div>
-                <!-- slide 2 -->
-                <div class="slide relative">
-                    <div class="w-full">
-                        <img src="/assets/img/Slide Image Example.svg" alt="">
-                    </div>
-                </div>
-                <!-- slide 3 -->
-                <div class="slide relative">
-                    <div class="w-full">
-                        <img src="/assets/img/Slide Image Example.svg" alt="">
-                    </div>
-                </div>
-
-                <!-- The previous button -->
-                <a class=" w-10 h-10 absolute -left-3  md:-left-5 top-1/2 p-4 flex justify-center items-center rounded-full -translate-y-1/2 outline outline-[#1A2432] bg-[#121927] hover:bg-black/50 text-white hover:text-[#61C454] cursor-pointer" onclick="moveSlide(-1)">❮</a>
-
-                <!-- The next button -->
-                <a class="w-10 h-10 absolute -right-3 md:-right-5 top-1/2 p-4 flex justify-center items-center rounded-full -translate-y-1/2 outline outline-[#1A2432] bg-[#121927] hover:bg-black/50 text-white hover:text-[#61C454] cursor-pointer" onclick="moveSlide(1)">❯</a>
-
+    <section class="container mx-auto px-5  flex justify-center items-center  my-32">
+        <div class="space-y-14 heroCard">
+            <div class="heroTitle">
+                <h1 class="text-white text-[55px] md:text-[80px] text-center font-bold max-w-xl ">Be Part Of The BL Community</h1>
+                <h1 class="text-[#A4B1CD] text-xs md:text-sm max-w-md md:max-w-lg mx-auto text-center">Join today the fastest-growing hacking community in the world!</h1>
             </div>
-            <!-- The dots -->
-            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-3 left-1/2">
-                <div class="dot w-6 h-1 rounded-full  cursor-pointer" onclick="currentSlide(1)"></div>
-                <div class="dot w-6 h-1 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
-                <div class="dot w-6 h-1 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+            <div class="flex justify-center items-center heroBottom">
+                <button class=" bg-[#34D399] py-2 px-6 rounded-xl font-bold hover:bg-[#75e6bc] hover:scale-105 hover:cursor-default duration-200">Join Now</button>
             </div>
-        </div>
-
         </div>
     </section>
     <!-- hero section E -->
 
-    <!-- blog card S -->
-    <section class="container mx-auto px-5 lg:px-20 my-28 space-y-10" id="navStart">
-        <div class="space-y-2 bolgCardTitle">
-            <h5 class="text-xl text-white font-bold">How Developers Digest</h5>
-            <h5 class="text-xs text-[#475569]">Want to dive in deeper into a specific category? Click on a topic below.</h5>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 blogCard">
-            <div class="shadow-lg overflow-hidden rounded-xl">
-                <div class="">
-                    <img src="/assets/img/Slide Image Example (1).svg" alt="">
+    <!-- community card S -->
+    <section class="container mx-auto px-5 lg:px-20 my-32 " id="navStart">
+        <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-5 items-center justify-center mb-5 communityCards">
+            <div class="text-center bg-[#1A2432] py-8 px-5 rounded-xl w-full ">
+                <div class="mb-4">
+                    <i class="fa-brands fa-discord text-white"></i>
                 </div>
-                <div class="px-7 py-7 space-y-3">
-                    <h6 class="text-xs text-[#475569]">HACKING | 10 MIN READ</h6>
-                    <h5 class="text-xl text-white font-bold">From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec</h5>
-                </div>
+                <h3 class="text-2xl text-white font-bold mb-7">Discord</h3>
+                <h5 class="text-xs text-[#A4B1CD] mb-2 max-w-xs mx-auto">Where the cool hackers hang out. Chat about labs, share resources and jobs. Connect with 80k+ hackers from all over the world.</h5>
+                <h4 class=" text-[#34D399] ">Play CTFs</h4>
             </div>
-            <div class="shadow-lg overflow-hidden rounded-xl">
-                <div class="">
-                    <img src="/assets/img/Slide Image Example (1).svg" alt="">
+            <div class="text-center bg-[#1A2432] py-8 px-5 rounded-xl w-full">
+                <div class="mb-4">
+                    <i class="fa-solid fa-desktop text-white"></i>
                 </div>
-                <div class="px-7 py-7 space-y-3">
-                    <h6 class="text-xs text-[#475569]">HACKING | 10 MIN READ</h6>
-                    <h5 class="text-xl text-white font-bold ">From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec</h5>
-                </div>
+                <h3 class="text-2xl text-white font-bold mb-7">Forum</h3>
+                <h5 class="text-xs text-[#A4B1CD] mb-2 max-w-xs mx-auto">Where questions are answered. Labs, news, write-ups, hints, and more. Check out what other HTB players are discussing about.</h5>
+                <h4 class=" text-[#34D399] ">Play CTFs</h4>
             </div>
-            <div class="shadow-lg overflow-hidden rounded-xl">
-                <div class="">
-                    <img src="/assets/img/Slide Image Example (1).svg" alt="">
+            <div class="text-center bg-[#1A2432] py-8 px-5 rounded-xl w-full">
+                <div class="mb-4">
+                    <i class="fa-solid fa-users text-white"></i>
                 </div>
-                <div class="px-7 py-7 space-y-3">
-                    <h6 class="text-xs text-[#475569]">HACKING | 10 MIN READ</h6>
-                    <h5 class="text-xl text-white font-bold ">From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec</h5>
-                </div>
-            </div>
-            <div class="shadow-lg overflow-hidden rounded-xl hidden md:inline">
-                <div class="">
-                    <img src="/assets/img/Slide Image Example (1).svg" alt="">
-                </div>
-                <div class="px-7 py-7 space-y-3">
-                    <h6 class="text-xs text-[#475569]">HACKING | 10 MIN READ</h6>
-                    <h5 class="text-xl text-white font-bold ">From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec</h5>
-                </div>
-            </div>
-            <div class="shadow-lg overflow-hidden rounded-xl hidden md:inline">
-                <div class="">
-                    <img src="/assets/img/Slide Image Example (1).svg" alt="">
-                </div>
-                <div class="px-7 py-7 space-y-3">
-                    <h6 class="text-xs text-[#475569]">HACKING | 10 MIN READ</h6>
-                    <h5 class="text-xl text-white font-bold ">From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec</h5>
-                </div>
-            </div>
-            <div class="shadow-lg overflow-hidden rounded-xl hidden md:inline">
-                <div class="">
-                    <img src="/assets/img/Slide Image Example (1).svg" alt="">
-                </div>
-                <div class="px-7 py-7 space-y-3">
-                    <h6 class="text-xs text-[#475569]">HACKING | 10 MIN READ</h6>
-                    <h5 class="text-xl text-white font-bold ">From poker player to Senior Pentester at Oracle: Jeremy's journey into cybersec</h5>
-                </div>
+                <h3 class="text-2xl text-white font-bold mb-7">Meetups</h3>
+                <h5 class="text-xs text-[#A4B1CD] mb-2 max-w-xs mx-auto">Where the community meets in person. Attend a meetup near you, join online, or even apply to host one in your town.</h5>
+                <h4 class=" text-[#34D399] ">Play CTFs</h4>
             </div>
         </div>
-        <div class="flex items-center justify-center space-x-5 md:hidden ">
-            <div class="border rounded-xl border-[#A4B1CD] py-2 px-6 hover:scale-95 hover:bg-[#121927] hover:cursor-default duration-200 blogCardBottom">
-                <h4 class="text-[#34D399] ">See more</h4>
+        <div class=" bg-[#1A2432] py-20 px-5 md:px-24 rounded-xl flex items-center justify-center communityMainCard">
+            <div class="space-y-5 text-center">
+                <h3 class="text-2xl text-white font-bold mb-7 ">Join Us On Social Media</h3>
+                <h5 class="text-xs text-[#A4B1CD] mb-2 max-w-[160px] mx-auto">Choose the channel that you are most active in and letâ€™s get connected!</h5>
+                <div class="flex justify-evenly text-white">
+                    <div class="">
+                        <i class="fa-brands fa-facebook-f text-lg"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-twitter text-lg"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-youtube text-lg"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- blog card E -->
+    <!-- community card E -->
 
     <!-- footer S -->
     <footer class="container mx-auto px-5  my-32 py-8 space-y-36">
@@ -352,14 +299,13 @@
             </div>
         </div>
         <div class="flex justify-center space-x-10">
-            <h5 class="text-[#A4B1CD] text-xs">© 2022 berryleaf</h5>
+            <h5 class="text-[#A4B1CD] text-xs">Â© 2022 berryleaf</h5>
             <h5 class="text-[#A4B1CD] text-xs">Privacy Notice</h5>
         </div>
     </footer>
     <!-- footer E -->
 </body>
-<script src="./assets/Js/blogPage.js"></script>
 
-</html>
+<script src="./assets/Js/communityPage.js"></script>
 
 </html>
